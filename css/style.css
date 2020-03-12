@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 20px 0;
+    background-color: #eee;
+}
+p{
+    margin: .3em 0;
+}
+h1{
+    margin-top: 0;
+    font-size: 26px;
+}
+article{
+    width: 21cm;
+    min-height: 29.7cm;
+    background-color: white;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 1em;
+}
+
+.bio{
+    position: relative;
+}
+
+.bio img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media print {
+    body{
+        margin: 0;
+    }
+}
