@@ -4,6 +4,7 @@
 
 body{
     margin: 20px 0;
+    font-family: sans-serif;
     background-color: #eee;
 }
 p{
@@ -30,6 +31,8 @@ article{
     position: absolute;
     top: 0;
     right: 0;
+    width: 120px;
+    height: 150px;
 }
 
 @media print {

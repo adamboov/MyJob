@@ -7,7 +7,7 @@ option = {
             textStyle: {
                 color: '#fff',
                 backgroundColor: '#999',
-                borderRadius: 3,
+                borderRadius: 6,
                 padding: [3, 5]
             }
         },
@@ -16,7 +16,7 @@ option = {
             { name: 'Python', max: 100},
             { name: '前端', max: 100},
             { name: '项目开发', max: 100},
-            { name: '编程基础', max: 100},
+            { name: '编程关注', max: 100},
             { name: '沟通能力', max: 100}
         ]
     },
@@ -26,8 +26,8 @@ option = {
         // areaStyle: {normal: {}},
         data: [
             {
-                value: [80, 70, 75, 90, 80, 75],
-                name: '技能雷达图'
+                value: [85, 70, 75, 85, 80, 75],
+                name: '技能图'
             }
         ]
     }]
