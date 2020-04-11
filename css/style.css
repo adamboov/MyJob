@@ -1,19 +1,31 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 20px 0;
     font-family: sans-serif;
     background-color: #eee;
 }
-p{
+
+p {
     margin: .3em 0;
 }
+
 h1{
     margin-top: 0;
-    font-size: 26px;
 }
+
+h3 {
+    color: #3385ff;
+}
+h3+p {
+    text-indent: 2em;
+}
+h4+p {
+    text-indent: 2em;
+}
+
 article{
     width: 21cm;
     min-height: 29.7cm;
@@ -23,11 +35,15 @@ article{
     padding: 1em;
 }
 
-.bio{
+.bio {
     position: relative;
 }
 
-.bio img{
+#skill strong {
+    color: #30f;
+}
+
+.bio img.personPic {
     position: absolute;
     top: 0;
     right: 0;

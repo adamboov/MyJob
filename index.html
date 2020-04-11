@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>我的简历</title>
+    <title>肖林锋--Java开发工程师</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -14,27 +14,83 @@
             <h1>肖林锋</h1>
             <img class="personPic" src="./img/me.jpg" alt="personPic" width="100" height="120">
             <p>
-                男 | 23岁 | Java开发工程师 | 长沙
+                男 | 22岁 | Java开发工程师 | 长沙
             </p>
             <p>
                 手机： 17352649746 | 微信： 17352649746 | Email: adamboov@163.com
             </p>
         </section>
-        <section>
+        <section id="skill">
             <h2>技能介绍</h2>
             <div id="skillMap" style="width: 600px;height: 400px"></div>
-            <ul>
-                <li>了解JavaScript、JQuery、网页SEO优化和NodeJS等前端技术</li>
-                <li>熟悉HTML、CSS、MySQL、NginxWEB服务器、Tomcat应用服务器</li>
-                <li>熟练使用Eclipse、IDEA、Atom、Maven、Git、Xshell等开发工具</li>
-                <li>熟悉SpringBoot、SpringMVC、MyBatis等前端Java框架</li>
+            <ul style="list-style: decimal;">
+                <li><p>了解网页<strong>SEO</strong>优化和<strong>NodeJS</strong>等技术</p></li>
+                <li><p>熟悉<strong>HTML5</strong>、<strong>CSS3</strong>、<strong>JavaScript</strong>、<strong>JQuery</strong>、<strong>Ajax</strong>等前端技术</p></li>
+                <li><p>熟悉<strong>Servlet</strong>、<strong>JSP</strong>、<strong>Thymeleaf</strong>等JavaWEB技术以及<strong>MySQL</strong>数据库</p></li>
+                <li><p>熟练使用Eclipse(STS)、IDEA、Pycharm、Atom、Maven、Git、Xshell等开发工具</p></li>
+                <li><p>熟悉<strong>SSM</strong>、<strong>SpringBoot</strong>、和<strong>SpringData JPA</strong>等JavaWEB框架以及PythonWEB框架—<strong>Django</strong></p></li>
+                <li><p>掌握在<strong>Linux</strong>下部署项目到<strong>Tomcat</strong>并使用<strong>Nginx</strong>配置反向代理及子域名的配置--独立在阿里云、腾讯云服务器部署过个人项目</p></li>
             </ul>
         </section>
         <section>
             <h2>工作经历</h2>
+            <h3>潭州教育</h3>
+            <h4>Java助教</h4>
+            <span>2019年9月-2020年1月</span>
+            <ol>
+                <li>负责批改学员作业，帮助老师解答学员疑问</li>
+                <li>备课案例，开始讲解一些简单案例，对0基础学员教学</li>
+                <li>完成组长交给我的学院内部项目任务，并测试提交</li>
+            </ol>
+            <h3>上海述信信息科技有限公司</h3>
+            <h4>Python开发实习</h4>
+            <span>2019年3月-2019年7月</span>
+            <ol>
+                <li>对产品经理提出的新需求进行功能实现</li>
+                <li>数据库建表，编写菜园子竞猜功能模块，提升公众号用户活跃量</li>
+                <li>对公众号推送模板消息进行后台数据编写，并加入到SAE队列任务</li>
+            </ol>
+        </section>
+        <section>
+            <h2>项目经历</h2>
+            <h3>基于SpringBoot的个人博客项目</h3>
+            <h4>技术要点</h4>
+            <p>SpringBoot、MySQL、SpringBoot JPA、CentOS7.2、Nginx、Tomcat8.5、Editor.md</p>
+            <h4>项目介绍</h4>
+            <p>这是我个人的一个博客项目，使用SpringBoot框架搭建，使用SpringBoot JPA作为作为持久层框架，使用MySQL数据库存储数据，
+                使用Thymeleaf作为页面渲染模板引擎，使用Git作为版本控制工具，使用Nginx做反向代理</p>
+            <h4>实现功能</h4>
+            <ol>
+                <li>使用MySQL数据库设计数据库字段</li>
+                <li>后台管理登录、发布、修改博客功能</li>
+                <li>使用SeagmentUI实现前端页面的编写，并使用Thymeleaf模板渲染</li>
+                <li>部署到服务器的Tomcat容器中并使用Nginx配置域名，以及子域名</li>
+            </ol>
+            <h3>基于Django的微信公众号——菜园子</h3>
+            <h4>实现功能</h4>
+            <ol>
+                <li>创建订阅中心的后台接口，默认为开启推送，引导用户设置继续保持接受模板信息的推送</li>
+                <li>通过提供的模板ID创建模板信息，在SAE上创建任务队列，设置定时任务并验证是否需要推送模板信息</li>
+                <li>为公众号运营提供新信息发布一键提醒功能，当有每天发布新话题时，一键推送给开启话题订阅的用户</li>
+            </ol>
+            <p>主要使用Django框架对产品经理提出的新需求进行功能实现</p>
+            <h3>基于Python—wxpy库的搬运机器人</h3>
+            <h4>实现功能</h4>
+                <ol>
+                    <li>设置定时搬运，每隔半个小时搬运一次信息，避免搬运信息频繁被微信封号</li>
+                    <li>添加设置指令，方便机器人管理人员操作机器搬运信息时间,并验证管理员openID</li>
+                    <li>使用difflib库，比对搬运信息是否是同一个，相似度超过80%视为同一信息，则不再搬运</li>
+                </ol>
         </section>
         <section>
             <h2>教育经历</h2>
+            <table width="600" cellspacing="50">
+                <tr>
+                <th>2016年9月-2019年6月</th>
+                <th>软件工程</th>
+                <th>湖南软件学院</th>
+            </tr>
+            </table>
         </section>
     </article>
     <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>

@@ -12,12 +12,12 @@ option = {
             }
         },
         indicator: [
-            { name: 'Java', max: 100},
+            { name: '学习能力', max: 100},
             { name: 'Python', max: 100},
-            { name: '前端', max: 100},
-            { name: '项目开发', max: 100},
-            { name: '编程关注', max: 100},
-            { name: '沟通能力', max: 100}
+            { name: 'WEB前端', max: 100},
+            { name: '沟通能力', max: 100},
+            { name: '主流框架', max: 100},
+            { name: 'Java', max: 100},
         ]
     },
     series: [{
@@ -26,7 +26,7 @@ option = {
         // areaStyle: {normal: {}},
         data: [
             {
-                value: [85, 70, 75, 85, 80, 75],
+                value: [85, 76, 70, 70, 75, 79],
                 name: '技能图'
             }
         ]
